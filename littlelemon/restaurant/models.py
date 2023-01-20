@@ -10,7 +10,7 @@ class Menu(models.Model):
         verbose_name_plural = 'Menu Items'
 
     def __str__(self) -> str:
-        return f'{self.title} costs {self.price} $'
+        return f'{self.title} : {str(self.price)}'
     
 class Booking(models.Model):
     name = models.CharField(max_length=255)
